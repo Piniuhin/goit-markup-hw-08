@@ -1,0 +1,36 @@
+.page-header {
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-line);
+}
+.container .main-nav{
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    margin-right: auto;
+    /*margin-right: 331px;*/
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--accent-color);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 24px 0 25px 0;
+    margin-right: 93px;
+}
+.logo-studio {
+    color: var(--logo-black-color);
+}

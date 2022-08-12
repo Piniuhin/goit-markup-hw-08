@@ -1,0 +1,36 @@
+.client-list {
+    display: flex;
+}
+
+.client-list .item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+
+    & + .item {
+        margin-left: 30px;
+    }
+        
+}
+
+.icon-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: var(--background-color-icon-social-links);
+    border-radius: 4px;
+
+    width: 100%;
+    height: 100%;
+
+    fill: var(--background-color-icon-social-links);
+    transition: fill 250ms var(--time-function), 
+    border-color 250ms var(--time-function);
+    
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+}
