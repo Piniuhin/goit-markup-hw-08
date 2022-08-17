@@ -7,9 +7,14 @@
     color: var(--title-text-color);
     margin-bottom: 50px;
 }
+/*  MOB  */
+.feature-list {
+    display: block;
+}
+/*  DESK
 .feature-list {
     display: flex;
-}
+}*/
 .feature-list .item {
     width: 270px;
 }

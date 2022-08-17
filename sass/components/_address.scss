@@ -14,11 +14,18 @@
 .address_nav .address_item+ .address_item {
     margin-top: 9px;
 }
+/*  MOB  */
+.footer .container {
+    display: block;
+    /*align-items: baseline;*/
+}
 
+/*  DESK
 .footer .container {
     display: flex;
     align-items: baseline;
-}
+}*/
+
 .coordinates {
     display: block;
     margin-right: 70px;
@@ -79,10 +86,18 @@
 .subscribe-footer {
     margin-left: 93px;
 }
+/*  MOB  */
+.subscribe {
+    display: block;
+    align-items: center;
+}
+
+/*  DESK
 .subscribe {
     display: flex;
     align-items: center;
-}
+}*/
+
 .email-input {
     font-size: 16px;
     line-height: 1.25;
