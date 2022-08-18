@@ -16,14 +16,24 @@
     padding-bottom: 200px;
 }
 .hero-title {
-    /*margin-bottom: 30px;*/
-    margin: 0 auto;
-    width: 696px;
+    
+    @media screen and (max-width: 479px) {
+        width: 300px;
+    }
+    font-size: 26px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.62;
+    width: 360px;
+    margin: 0 auto;
+
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }

@@ -10,8 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
-    /*  MOB  */
-    overflow-y: scroll;
+
 }
 p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -23,16 +22,8 @@ img {
     height: auto;
 }
 
-/*  mob */
 .container {
-    width: 480px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}    
-/*  desk
-.container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -45,13 +36,38 @@ img {
         width: 768px;
     }
 
-    @media screen and (min-width: 12000px) {
+    @media screen and (min-width: 1200px) {
         width: 1200px;
     }
-}*/
+}
 
 .section {
-    padding: 94px 0 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+    
+}
+
+.section-title {
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 1.17;
+    }
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 /* -----------------visually-hidden------------------- */

@@ -1,4 +1,9 @@
 .site-nav {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
     display: flex;
     
     & .current {
@@ -34,6 +39,11 @@
 }
 
 .auth-nav {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
     display: flex;
 
     & .icon {
