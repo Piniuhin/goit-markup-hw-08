@@ -965,9 +965,15 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
+  padding-bottom: 24px;
   margin-bottom: 30px;
   list-style: none;
+}
+@media screen and (min-width: 1199px) {
+  .social-links {
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .social-links .soc-item {
