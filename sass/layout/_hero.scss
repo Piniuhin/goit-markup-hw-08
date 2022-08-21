@@ -1,39 +1,93 @@
 .hero {
-    background-image: 
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../img/baner.jpg');
-    background-color: var(--background-footer);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1600px;
+  padding: 118px 0;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header-mob.jpg);
+  @include retina {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-tab.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/header-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding: 200px 0;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
 
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-des.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/header-des-2x.jpg);
+    }
+  }
 }
-.hero-title {
-    
-    @media screen and (max-width: 479px) {
-        width: 300px;
-    }
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.62;
-    width: 360px;
-    margin: 0 auto;
 
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
+.hero__title {
+  max-width: 360px;
+  @include tablet {
+  }
+  margin: 0 auto;
+  margin-bottom: 30px;
+  @include font(900, 26px, 1.62, 0.06em);
+  color: var(--white-text-color);
 
-    @media screen and (min-width: 1200px) {
-        width: 696px;
-        font-size: 44px;
-        line-height: 1.36;
-    }
+  text-transform: uppercase;
+  @include desktop {
+    max-width: 696px;
+    @include font(900, 44px, 1.36, 0.06em);
+  }
+}
+
+.hero__btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+
+  @include font(700, 16px, 1.88, 0.06em);
+
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--time-function);
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-color);
+  }
 }

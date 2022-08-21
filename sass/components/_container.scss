@@ -1,20 +1,18 @@
-/*
 .container {
-    width: 100%;
-    
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  @include mobile{
+    width: 480px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+   @include tablet{
+    width: 768px;
+  }
 
-    @media screen and (min-width: 12000px) {
-        width: 1200px;
-    }
-}*/
+  @include desktop {
+    width: 1200px;
+  }
 
+}
