@@ -110,12 +110,16 @@
               <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                    <ul class="team-list list">
-                <li class="item">
+                <li class="team-item">
                     <picture>
                         <source 
-                            srcset="./img/team/mob/igor@1x_mob-min-min-min.jpg, 
-                                    ./img/team/mob/igor@2x_mob-min-min-min.jpg" 
-                            media="(min-width:1200px)">
+                        srcset="./img/team/tab/igor@1x_tab-min.jpg 1x, 
+                                ./img/team/tab/igor@2x_tab-min.jpg 2x"
+                                media="(min-width:768px)">
+                        <source 
+                            srcset="./img/team/mob/igor@1x_mob-min-min-min.jpg 1x, 
+                                    ./img/team/mob/igor@2x_mob-min-min-min.jpg 2x" 
+                            media="(min-width:320px)">
                         <img src="./img/team/igor.jpg" alt="igor" width="270">
                     </picture>
                 
@@ -142,7 +146,7 @@
                     </ul>
 
                 </li>
-                <li class="item">
+                <li class="team-item">
                     <img src="./img/team/olga.jpg" alt="olga" width="270">
                     
                     <h3 class="title">Ольга Репина</h3>
@@ -168,7 +172,7 @@
                     </ul>
                    
                 </li>
-                <li class="item">
+                <li class="team-item">
                     <img src="./img/team/nikola.jpg" alt="nikola" width="270">
                     
                     <h3 class="title">Николай Тарасов</h3>
@@ -193,7 +197,7 @@
                                     <use href="./img/icons/sprite.svg#icon-linkedin-1"></use></svg></a></li>
                     </ul>
                 </li>
-                <li class="item">
+                <li class="team-item">
                     <img src="./img/team/mihal.jpg" alt="mihal" width="270">
                     
                     <h3 class="title">Михаил Ермаков</h3>
@@ -271,38 +275,40 @@
 
     <footer class="footer">
         <div class="container">
-          <div class="coordinates">
-            <a href="" class="logo_footer">Web<span class="logo_studio">Studio</span></a>
-            <address class="address">
-            <ul class="address_nav list">
-                <li class="address_item"><a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="address_item"><a href="mailto:info@example.com" class="address-link">info@example.com</a></li>
-                <li class="address_item"><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
-            </ul>
-            </address>
-          </div>
-          <div class="social-footer">
-            <p class="title">присоединяйтесь</p>
-            
-                <ul class="soclinks list">
-                    <li class="soc-item instagram">
-                        <a href="" class="link socicon">
-                            <svg class="icon-soc" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-instagram-2"></use></svg></a></li>
-                    <li class="soc-item twitter">
-                        <a href="" class="link socicon">
-                            <svg class="icon-soc" width="20" height="20">
-                                <use href="./img/icons/sprite.svg#icon-twitter-1"></use></svg></a></li>
-                    <li class="soc-item facebook">
-                        <a href="" class="link socicon">
-                            <svg class="icon-soc" width="20" height="20">
-                                <use href="./img/icons/sprite.svg#icon-facebook-1"></use></svg></a></li>
-                    <li class="soc-item linkedin">
-                        <a href="" class="link socicon">
-                            <svg class="icon-soc" width="20" height="20">
-                                <use href="./img/icons/sprite.svg#icon-linkedin-1"></use></svg></a></li>
-                </ul>
-          </div>
+            <div class="footer-wrap">
+                <div class="coordinates">
+                    <a href="" class="logo_footer">Web<span class="logo_studio">Studio</span></a>
+                    <address class="address">
+                    <ul class="address_nav list">
+                        <li class="address_item"><a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address_item"><a href="mailto:info@example.com" class="address-link">info@example.com</a></li>
+                        <li class="address_item"><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
+                    </ul>
+                    </address>
+                  </div>
+                  <div class="social-footer">
+                    <p class="title">присоединяйтесь</p>
+                    
+                        <ul class="soclinks list">
+                            <li class="soc-item instagram">
+                                <a href="" class="link socicon">
+                                    <svg class="icon-soc" width="20" height="20">
+                                    <use href="./img/icons/sprite.svg#icon-instagram-2"></use></svg></a></li>
+                            <li class="soc-item twitter">
+                                <a href="" class="link socicon">
+                                    <svg class="icon-soc" width="20" height="20">
+                                        <use href="./img/icons/sprite.svg#icon-twitter-1"></use></svg></a></li>
+                            <li class="soc-item facebook">
+                                <a href="" class="link socicon">
+                                    <svg class="icon-soc" width="20" height="20">
+                                        <use href="./img/icons/sprite.svg#icon-facebook-1"></use></svg></a></li>
+                            <li class="soc-item linkedin">
+                                <a href="" class="link socicon">
+                                    <svg class="icon-soc" width="20" height="20">
+                                        <use href="./img/icons/sprite.svg#icon-linkedin-1"></use></svg></a></li>
+                        </ul>
+                  </div>
+            </div>
 
           <div class="social-footer subscribe-footer">
             <p class="title">Подпишитесь на рассылку</p>
@@ -383,6 +389,7 @@
        </div>
        
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

@@ -1,15 +1,10 @@
 .team {
     background-color: var(--primary-button-color);
 }
-.team .item {
+.team .team-item {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-/*  MOB  
-.team-list {
-    display: block;
-}*/
-
 
 .team-list {
     @media screen and (min-width: 768px) {
@@ -19,7 +14,7 @@
     }
 }
 
-.team-list .item {
+.team-list .team-item {
     /*padding: 30px;*/
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -27,7 +22,7 @@
     background-color: var(--primary-white-color);
     text-align: center;
 
-    & + .item {
+    & + .team-item {
         margin-left: 30px;
     }
 }
@@ -48,13 +43,16 @@
 .social-links {
     display: flex;
     justify-content: center;
-    padding-bottom: 24px;
-    margin-bottom: 30px;
     list-style: none;
-    @media screen and (min-width: 1199px) {
-        padding: 0;
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 24px;
         margin-bottom: 30px;
     }
+    /*
+    @media screen and (min-width: 1199px) {
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }*/
 }
 .social-links .soc-item {
     width: 44px;
@@ -88,9 +86,10 @@
 .icon-soc {
     fill: currentColor;
 }
+/*
 .icon:hover {
     color: var(--accent-color);
-}
+}*/
 .link-icon {
     padding: 0;
     margin: 0;
